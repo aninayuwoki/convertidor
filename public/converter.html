@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir Imagen - ImageConverter</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+        header {
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 1rem 0;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
+        .converter-card {
+            background: #1e293b;
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid #334155;
+        }
+        .upload-area {
+            border: 2px dashed #334155;
+            border-radius: 0.5rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+        }
+        input[type="file"] { display: none; }
+        .format-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .format-btn {
+            padding: 0.75rem;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            color: #f1f5f9;
+            cursor: pointer;
+        }
+        .format-btn.active {
+            background: #6366f1;
+            color: white;
+        }
+        .convert-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .convert-btn:disabled { opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">🖼️ ImageConverter</a>
+            <a href="/" style="color: #94a3b8; text-decoration: none;">← Volver</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Convertir Imagen</h1>
+        <div class="converter-card">
+            <div class="upload-area" id="uploadArea">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📁</div>
+                <p><strong>Haz clic para subir imagen</strong></p>
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+            <div class="format-selector">
+                <button class="format-btn active" data-format="png">PNG</button>
+                <button class="format-btn" data-format="jpg">JPG</button>
+                <button class="format-btn" data-format="webp">WebP</button>
+                <button class="format-btn" data-format="avif">AVIF</button>
+            </div>
+            <button class="convert-btn" id="convertBtn" disabled>Selecciona imagen</button>
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+</html>
