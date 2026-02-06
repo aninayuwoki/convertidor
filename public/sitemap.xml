@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://tudominio.com/</loc>
+        <loc>https://chismeate.onrender.com/</loc>
+        <lastmod>2024-02-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://chismeate.onrender.com/convertir-jpg-a-png</loc>
+        <lastmod>2024-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://chismeate.onrender.com/convertir-png-a-jpg</loc>
+        <lastmod>2024-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://chismeate.onrender.com/convertir-webp-a-png</loc>
+        <lastmod>2024-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://chismeate.onrender.com/convertir-pdf-a-imagen</loc>
+        <lastmod>2024-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>
